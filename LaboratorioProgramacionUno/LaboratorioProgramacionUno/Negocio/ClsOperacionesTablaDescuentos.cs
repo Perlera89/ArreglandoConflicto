@@ -14,6 +14,7 @@ namespace LaboratorioProgramacionUno.Negocio
         public void funcionesTabla(ClsDescriptorTablaDescuentos tablaAtributos)
         {
             frmOperaciones frmTabla = new frmOperaciones();
+            frmOperaciones frmTabla2 = new frmOperaciones();
 
             Double iva = tablaAtributos.Iva;
             string producto = tablaAtributos.NombreProducto;
@@ -72,7 +73,6 @@ namespace LaboratorioProgramacionUno.Negocio
                 frmTabla.lbTotalConDescuento.Text = (TotalSinDescuento - (TotalSinDescuento * 0.50)).ToString();
                 MessageBox.Show((TotalSinDescuento - (TotalSinDescuento * 0.50)).ToString());
             }
-
             frmTabla.Show();
         }
     }

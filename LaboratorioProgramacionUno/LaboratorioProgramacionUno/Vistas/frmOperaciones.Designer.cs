@@ -218,6 +218,7 @@ namespace LaboratorioProgramacionUno.VIstas
             this.txtPrecioDelProducto.Size = new System.Drawing.Size(168, 26);
             this.txtPrecioDelProducto.TabIndex = 16;
             this.txtPrecioDelProducto.Text = "100";
+            this.txtPrecioDelProducto.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrecioDelProducto_KeyPress);
             // 
             // txtCantidad
             // 
@@ -227,6 +228,7 @@ namespace LaboratorioProgramacionUno.VIstas
             this.txtCantidad.Size = new System.Drawing.Size(168, 26);
             this.txtCantidad.TabIndex = 17;
             this.txtCantidad.Text = "1";
+            this.txtCantidad.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidad_KeyPress);
             // 
             // lbProductoNombre
             // 
@@ -360,6 +362,7 @@ namespace LaboratorioProgramacionUno.VIstas
             this.Name = "frmOperaciones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmOperaciones";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmOperaciones_FormClosing);
             this.Load += new System.EventHandler(this.frmOperaciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

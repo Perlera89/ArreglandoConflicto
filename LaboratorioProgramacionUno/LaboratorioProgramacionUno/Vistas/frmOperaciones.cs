@@ -71,5 +71,26 @@ namespace LaboratorioProgramacionUno.VIstas
         {
 
         }
+
+        private void frmOperaciones_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void txtPrecioDelProducto_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                btnCalcular.PerformClick();
+            }
+        }
+
+        private void txtCantidad_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                btnCalcular.PerformClick();
+            }
+        }
     }
 }

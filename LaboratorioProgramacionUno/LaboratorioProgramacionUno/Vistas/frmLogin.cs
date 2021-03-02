@@ -98,5 +98,17 @@ namespace LaboratorioProgramacionUno.VIstas
             }
         }
 
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void txtUser_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Enter))
+            {
+                btnEntrar.PerformClick();
+            }
+        }
     }
 }
